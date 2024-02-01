@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style Sheets/style.css">
+    <link rel="stylesheet" href="Style Sheets/greetings.css">
+    <link rel="stylesheet" href="Style Sheets/aboutMe.css">
+    <title>Geo-Rey</title>
+</head>
+<body>
+    <nav>
+        <a onclick="showSection('greetings')">Home</a>
+        <a onclick="showSection('about-me')">About Me</a>
+        <a onclick="showSection('socials')">Socials</a>
+    </nav>
+
+    <section id="greetings" class="">
+        <h1 clas="header-message">Welcome to My WebPage</h1>
+        
+        <div class="photo-container">
+            <img src="Images/PicNiGeo-1.jpg" alt="Pic Ni Geo" id="geo-pic">
+            <img src="Images/PicNiGeo-2.jpg" alt="Pic Ni Geo" id="geo-pic">
+            <img src="Images/PicNiGeo-3.png" alt="Pic Ni Geo" id="geo-pic">
+            <img src="Images/PicNiGeo-5.jpg" alt="Pic Ni Geo" id="geo-pic">
+        </div>
+    </section>
+    <section id="about-me" class="active">
+        <div class="short-bio">
+            <div class="short-bio-paragraph">
+                <p class="bio-header">Who am I and What I do?</p>
+                <p class="bio-paragraph">I am a dedicated student studying accounting in Section I-CMA. I have a deep passion for anything related to numbers and enjoy exploring various subjects and courses that expand my knowledge in this field. I am always eager to strive further and excel in my academic pursuits.
+    
+                    Aside from my academic interests, I have a unique hobby of making fun of myself, which brings laughter and light-heartedness to my life. In my free time, I also indulge in watching anime and engaging with various forms of entertainment.
+                    
+                    I am excited about the possibilities that lie ahead and look forward to embracing new opportunities and challenges in both my academic and personal life.</p>
+            </div>
+            <div class="bio-pic">
+                <img src="Images/PicNiGeo-2.jpg" alt="" id="bio-image">
+            </div>
+        </div>
+        <div class="portfolio-container">
+            <div class="graduation-pic-container">
+                <img src="Images/Portfolio-Image-1.jpg" alt="Graduation Pic" id="grad-pic">
+            </div>
+            <div class="portfolio-list">
+                <p class="portfolio-header">Portfolio of Achievements</p>
+                <p class="school-header">Higher Grade of BNAHS</p>
+                <ul>
+                    <li>Graduated With Honors</li>
+                    <li>3rd Place, DOST (Department of Science and Technology) Research Contest (2022)</li>
+                    <li>More Achievements Coming Soon(Sana)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="socials">
+
+    </section>
+
+    <script src="Script/geo.js"></script>
+</body>
+</html>
