@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 243, 207);
+}
+
+section{
+    display: none;
+
+}
+
+section.active{
+    display: block;
+    animation: fade 0.7s alternate;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+nav{
+    background-color: rgb(232, 200, 114);
+    padding: 10px;
+    text-align: end;
+    position: sticky;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
