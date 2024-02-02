@@ -11,6 +11,7 @@ section{
 section.active{
     display: block;
     animation: fade 0.7s alternate;
+    margin-top: 60px;
 }
 
 @keyframes fade{
@@ -26,15 +27,34 @@ nav{
     background-color: rgb(232, 200, 114);
     padding: 10px;
     text-align: end;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav a{
     text-decoration: none;
     color: white;
     margin: 0 15px;
+    padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 450px) {
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+    nav a{
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
 }
