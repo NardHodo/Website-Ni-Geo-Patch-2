@@ -9,6 +9,11 @@ function showSection(sectionId) {
 
     var selectedSection = document.getElementById(sectionId);
     selectedSection.classList.add('active');
+
+    window.scrollTo({
+        top: selectedSection.offsetTop,
+        behavior: 'smooth'
+    });
 }  
 
 
@@ -52,3 +57,16 @@ setInterval(changePhoto , 3500);
 setInterval(changeText, 3500);
 setInterval(toggleULs, 3500);
 
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".navbar").style.top = "0";
+    } else {
+        document.querySelector(".navbar").style.top = "-60px"; /* Adjust as needed */
+    }
+
+    prevScrollpos = currentScrollPos;
+};
