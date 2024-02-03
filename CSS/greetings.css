@@ -1,9 +1,17 @@
 
+#greetings{
+    color: white;
+}
+
+
 .header{
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 60px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-weight: bold;
     padding: 0;
 }
 
@@ -21,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;  
+    margin-bottom: 10px;
 }
 
 .pictures{
@@ -31,7 +40,7 @@
 .picture-container{
     height: fit-content;
     padding: 10px;
-    border-top: 5px solid black;
+    border-top: 5px solid rgb(201, 215, 221);
 }
 
 
@@ -47,9 +56,10 @@
     
 }
 
-@media (min-width: 601px) and (max-width: 1000px){
+@media (min-width: 601px) and (max-width: 1200px){
     .pictures{
         display: grid;
         grid-template-columns: 50% 50%;
+        row-gap: 30px;
     }
 }

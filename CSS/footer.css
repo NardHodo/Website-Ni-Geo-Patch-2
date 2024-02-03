@@ -1,0 +1,15 @@
+footer{
+    margin-top: auto;
+    margin-left: 10px;
+    height: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 450px){
+    footer{
+        font-size: 15px;
+        color: white;
+    }
+}
