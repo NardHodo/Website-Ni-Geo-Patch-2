@@ -6,30 +6,41 @@
     <link rel="stylesheet" href="CSS/greetings.css">
     <link rel="stylesheet" href="CSS/aboutMe.css">
     <link rel="stylesheet" href="CSS/socials.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <title>Geo-Rey</title>
 </head>
-<body>
-    <nav class="navbar">
+<body class="loading">
+    <nav class="navbar" id="navbar">
         <a onclick="showSection('greetings')">Home</a>
         <a onclick="showSection('about-me')">About Me</a>
         <a onclick="showSection('socials')">Socials</a>
     </nav>
 
     <section id="greetings" class="active">
-        <h1 clas="header-message">Welcome to My WebPage</h1>
-        
-        <div class="photo-container">
-            <img src="Images/PicNiGeo-1.jpg" alt="Pic Ni Geo" id="geo-pic">
-            <img src="Images/PicNiGeo-2.jpg" alt="Pic Ni Geo" id="geo-pic">
-            <img src="Images/PicNiGeo-3.png" alt="Pic Ni Geo" id="geo-pic">
-            <img src="Images/PicNiGeo-5.jpg" alt="Pic Ni Geo" id="geo-pic">
+        <div class="header">
+           <div class="text" id="header-text">
+             Welcome to My Page
+           </div>
+        </div>
+        <div class="picture-box">
+            <div class="pictures">
+                <div class="picture-container">
+                    <img src="Images/PicNiGeo-1.jpg" alt="" id="geo-pic" class="hidden-pic">
+                </div>
+                <div class="picture-container">
+                    <img src="Images/PicNiGeo-2.jpg" alt="" id="geo-pic" class="hidden-pic">
+                </div>
+                <div class="picture-container">
+                    <img src="Images/PicNiGeo-3.png" alt="" id="geo-pic" class="hidden-pic">
+                </div>
+                <div class="picture-container">
+                    <img src="Images/PicNiGeo-5.jpg" alt="" id="geo-pic" class="hidden-pic">
+                </div>
+            </div>
         </div>
     </section>
     <section id="about-me">
         <div class="short-bio">
-            <div class="bio-pic">
-                <img src="Images/PicNiGeo-2.jpg" alt="" id="bio-image">
-            </div>
             <div class="short-bio-paragraph">
                 <p class="bio-header">Who am I and What I do?</p>
                 <p class="bio-paragraph">I am a dedicated student studying accounting in Section I-CMA. I have a deep passion for anything related to numbers and enjoy exploring various subjects and courses that expand my knowledge in this field. I am always eager to strive further and excel in my academic pursuits.
@@ -45,7 +56,7 @@
                 <p id="school-header">Higher Grade of BNAHS(SHS)</p>
                 <ul id="shs-list" class="hidden">
                     <li id="achievements-list">Graduated With Honors</li>
-                    <li id="achievements-list">3rd Place, DOST (Department of Science and Technology) Research Contest (2022)</li>
+                    <li id="achievements-list">3rd Place, DOST Research Contest (2022)</li>
                 </ul>
                 <ul id="umak-list">
                     <li>NSTP Volunteer</li>
@@ -70,10 +81,11 @@
     </section>
     <section id="socials">
         <div class="social-container">
-            <h1>Get In Touch</h1>
+            <div class="social-box">
+                <h1>Get In Touch</h1>
             <div classs="social-numbers">
-                <p>Email: llenardfurigay@gmail.com</p>
-                <p>Mobile: 09511951060</p>
+                <p>Email: geodonverano@gmail.com</p>
+                <p>Mobile: 09082595886</p>
             <p>My Socials</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/greyg.veee"><img src="Images/Facebook.png" alt="" id="icon-pic"></a>
@@ -82,9 +94,23 @@
                 <img src="Images/Linkedn.png" alt="" id="icon-pic">
             </div>
             </div>
+            </div>
         </div>
     </section>
 
     <script src="Script/geo.js"></script>
+    <script src="Script/loading.js"></script>
 </body>
+
+<footer id="footer">
+    <div class="credits">
+        Wallpaper by: shankarlalsaini
+    </div>
+    <div class="rights">
+        2024 Geo-Rey. All rights reserved.
+    </div>
+    <div class="hidden-message">
+        Ampogi talaga ni Jordan!!
+    </div>
+</footer>
 </html>
