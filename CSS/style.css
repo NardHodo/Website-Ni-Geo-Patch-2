@@ -1,6 +1,19 @@
+@font-face {
+    font-family: Protest;
+    src: url('../Fonts/Poppins-Light.ttf');
+}
+
+
 body{
+    background-image: url('../Images/Aesthetic-Background.jpg');
+    background-size: 1440px 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin: 0;
-    background-color: rgb(255, 243, 207);
+    padding: 0;
+    font-family: Protest, sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
 
 section{
@@ -11,7 +24,7 @@ section{
 section.active{
     display: block;
     animation: fade 0.7s alternate;
-    margin-top: 60px;
+    padding: 50px 0;
 }
 
 @keyframes fade{
@@ -23,24 +36,34 @@ section.active{
     }
 }
 
-nav{
-    background-color: rgb(232, 200, 114);
+
+.navbar{
+    display: none;
+    background-color: rgba(77, 14, 223, 0.466);
     padding: 10px;
     text-align: end;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+    animation: fade 0.5s ease;
 }
 
 nav a{
     text-decoration: none;
-    color: white;
+    border: 1px solid;
+    border-radius: 5px;
     margin: 0 15px;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
     font-size: 25px;
-    font-weight: bold;
     cursor: pointer;
+}
+
+nav a:hover{
+    background-color: white;
+    color: rgb(77, 14, 223);
+    font-size: bold;
 }
 
 .hidden{

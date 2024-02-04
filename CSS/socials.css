@@ -1,14 +1,32 @@
 
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+
+
 .social-container{
    padding: 5px;
    height: fit-content;
    margin: 10px;
+   display: flex;
+   justify-content: center;
 }
 
 .social-container p{
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
+}
+
+.social-box{
+    display: block;
+    width: fit-content;
+    background-color: rgba(99, 122, 159, 0.463);
+    border: 5px solid rgb(201, 215, 221);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .social-numbers{
@@ -49,6 +67,11 @@
 
     .social-container p{
         font-size: 25px;
+    }
+    #icon-pic{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
     }
 
 
