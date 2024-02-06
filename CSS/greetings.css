@@ -9,20 +9,50 @@
     justify-content: center;
     text-align: center;
     font-size: 60px;
+    margin-top: 20px;
     -webkit-text-stroke: 1px black;
     color: white;
+    font-family: sans-serif;
     font-weight: bold;
     padding: 0;
 }
 
 .text{
     width: fit-content;
+    letter-spacing: 5px;
+    border-right: 3px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(30), blink-caret 2s step-end infinite;
 }
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000; }
+}
+
 
 #geo-pic{
     width: 250px;
     height: 350px;
     border-radius: 10px;
+    border: 5px solid black;
+    transition: opacity 1s;
+    transition: transform 0.3s ease;
+}
+
+#geo-pic:hover{
+    transform: scale(1.1);
+}
+
+.hidden-pic{
+    opacity: 0;
 }
 
 .picture-box{
@@ -35,22 +65,29 @@
 .pictures{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    border-top: 5px solid rgb(201, 215, 221);
+    margin-bottom: 100px;
 }
 
 .picture-container{
     height: fit-content;
     padding: 10px;
-    border-top: 5px solid rgb(201, 215, 221);
 }
 
 
 @media (max-width: 600px){
     .header{
-        font-size: 30px
+        font-size: 20px
     }
 
     .pictures{
         display:block;
+    }
+
+    .text{
+        font-size: 5vw;
+        animation: typing 1s steps(10), blink-caret 1s step-end infinite;
+
     }
 
     
@@ -62,4 +99,9 @@
         grid-template-columns: 50% 50%;
         row-gap: 30px;
     }
+
+    .header{
+        font-size: 40px
+    }
+
 }
