@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="CSS/footer.css">
     <title>Geo-Rey</title>
 </head>
-<body>
-    <nav class="navbar">
-        <a onclick="showSection('greetings')">Home</a>
-        <a onclick="showSection('about-me')">About Me</a>
-        <a onclick="showSection('socials')">Socials</a>
+<body class="loading">
+    <nav class="navbar" id="navbar">
+        <a onclick="showSection('greetings')" class="nav-link active">Home</a>
+        <a onclick="showSection('about-me')" class="nav-link">About Me</a>
+        <a onclick="showSection('socials')" class="nav-link">Socials</a>
     </nav>
 
     <section id="greetings" class="active">
         <div class="header">
-           <div class="text">
-            Welcome to My Page
+           <div class="text" id="header-text">
+             Welcome to My Page
            </div>
         </div>
         <div class="picture-box">
             <div class="pictures">
                 <div class="picture-container">
-                    <img src="Images/PicNiGeo-1.jpg" alt="" id="geo-pic">
+                    <img src="Images/PicNiGeo-1.jpg" alt="" id="geo-pic" class="hidden-pic">
                 </div>
                 <div class="picture-container">
-                    <img src="Images/PicNiGeo-2.jpg" alt="" id="geo-pic">
+                    <img src="Images/PicNiGeo-2.jpg" alt="" id="geo-pic" class="hidden-pic">
                 </div>
                 <div class="picture-container">
-                    <img src="Images/PicNiGeo-3.png" alt="" id="geo-pic">
+                    <img src="Images/PicNiGeo-3.png" alt="" id="geo-pic" class="hidden-pic">
                 </div>
                 <div class="picture-container">
-                    <img src="Images/PicNiGeo-5.jpg" alt="" id="geo-pic">
+                    <img src="Images/PicNiGeo-5.jpg" alt="" id="geo-pic" class="hidden-pic">
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 <p id="school-header">Higher Grade of BNAHS(SHS)</p>
                 <ul id="shs-list" class="hidden">
                     <li id="achievements-list">Graduated With Honors</li>
-                    <li id="achievements-list">3rd Place, DOST (Department of Science and Technology) Research Contest (2022)</li>
+                    <li id="achievements-list">3rd Place, DOST Research Contest (2022)</li>
                 </ul>
                 <ul id="umak-list">
                     <li>NSTP Volunteer</li>
@@ -81,7 +81,8 @@
     </section>
     <section id="socials">
         <div class="social-container">
-            <h1>Get In Touch</h1>
+            <div class="social-box">
+                <h1>Get In Touch</h1>
             <div classs="social-numbers">
                 <p>Email: geodonverano@gmail.com</p>
                 <p>Mobile: 09082595886</p>
@@ -93,6 +94,7 @@
                 <img src="Images/Linkedn.png" alt="" id="icon-pic">
             </div>
             </div>
+            </div>
         </div>
     </section>
 
@@ -100,7 +102,7 @@
     <script src="Script/loading.js"></script>
 </body>
 
-<footer class="footer">
+<footer id="footer">
     <div class="credits">
         Wallpaper by: shankarlalsaini
     </div>
